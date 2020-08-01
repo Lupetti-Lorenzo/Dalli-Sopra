@@ -11,5 +11,21 @@
     <title>Hello, world!</title>
   </head>
 <body>
-    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">
+      <img style="height: 40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png" alt="" loading="lazy"/>
+      <span class="ml-3">Dalli Sopra</span> 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+      <div class="navbar-nav align-items-center">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">La storia</a>
+        <a class="nav-item nav-link" href="#">Il castello</a>
+        <a class="nav-item nav-link" href="#">La piazza</a>
+      </div>
+    </div>
+  </nav>
    
