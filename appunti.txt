@@ -1,0 +1,8 @@
+-Bootstrap per responsive e menu - altri piccoli css frmw se necessari per animazioni
+-SQL database e PHP per pagina dinamica
+-Paypal per donazioni
+-Composer -> menager librerie, CodeCeption -> unit test, xDebug -> debug
+
+
+-galleria di immagini, -> tabella su db con blob e interfaccia per scegliere file
+-video e descrizione   -> tabella su db con url, desc e titolo, interfaccia per aggiungere 
