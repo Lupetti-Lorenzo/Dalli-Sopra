@@ -1,5 +1,19 @@
+BOOTSTRAP lo uso per le animazioni, non posso levarlo ma va limitato
+-organizzare file php, volendo con pages
+--scripts da mettere ./pages nei header()
+
 -video e descrizione   -> tabella su db con url, desc e titolo, interfaccia per aggiungere 
 -login per adminPage -> no db, password unica non cambiabile
 -scegliere il tipo di blob adatto e varchar
 ----errori----
 -errore non risolto di una foto .PNG al momento della aggiunta, le altre vanno sia in maiusc/minusc
+
+
+fare in modo di fare meno connessioni possibili, mettendo pdo in una sessione magari;
+
+galleria
+    centrare descrizione banner verde, flex denter
+
+//database 
+gestione galleria: 
+    modifica descrizione/titolo immagine-> anche nel database

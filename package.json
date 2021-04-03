@@ -1,0 +1,24 @@
+{
+	"name": "sitocrrx",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.php",
+	"scripts": {
+		"sass": "sass --watch src/styles/style.scss:src/styles/style.css",
+		"gitpush": "node gitpush.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Lupetti-Lorenzo/Sito-CrrX.git"
+	},
+	"keywords": [],
+	"author": "Lorenzo Lupetti <lorenzo.lupetti3@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Lupetti-Lorenzo/Sito-CrrX/issues"
+	},
+	"homepage": "https://github.com/Lupetti-Lorenzo/Sito-CrrX#readme",
+	"devDependencies": {
+		"sass": "^1.32.7"
+	}
+}
