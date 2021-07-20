@@ -78,3 +78,8 @@ $(document).keydown(function (e) {
 
 document.querySelector("#image-gallery-image").style.maxHeight = "74vh";
 document.querySelector("#image-gallery-image").style.objectFit = "contain";
+
+//animation when you open
+document.querySelectorAll('.image').forEach((e, i) => {
+	e.style.animationDelay = 80*(i+1)+'ms'
+})

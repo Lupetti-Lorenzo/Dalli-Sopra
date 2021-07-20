@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href='../styles/style.css'>
@@ -13,10 +12,9 @@
 
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
     <a class="navbar-brand" href="#">
-      <img style="height: 40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png" alt="" loading="lazy"/>
-      <span class="mx-3">Dalli Sopra</span> 
+      <h2 class="mx-3" style="font-size: 50px; margin-bottom: 0;">Dalli Sopra</h2> 
       <?php 
         session_start();
         if (isset($_SESSION['carrax'])) {
@@ -42,8 +40,6 @@
         <a class="nav-item nav-link <?php if ($page === "home") echo "active"; ?>" href="./index.php">Home</a>
         <a class="nav-item nav-link <?php if ($page === "gallery") echo "active"; ?>" href="./galleria.php">Galleria</a>
         <a class="nav-item nav-link <?php if ($page === "storia") echo "active"; ?>"   href="./laStoria.php">La storia</a>
-        <a class="nav-item nav-link" href="#">Il castello</a>
-        <a class="nav-item nav-link" href="#">La piazza</a>
       </div>
     </div>
   </nav>

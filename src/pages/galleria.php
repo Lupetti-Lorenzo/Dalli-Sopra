@@ -8,17 +8,17 @@
             $stmt = $pdo->prepare("SELECT * FROM Galleria");
             $stmt->execute();
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                for ($i = 0; $i <= 4; $i++) {
+                // for ($i = 0; $i <= 4; $i++) {
                     $src = 'data:'.$row['tipo'].';base64,'.base64_encode($row['immagine']);
-                    echo '<div  class="thumb gallery-item">
+                    echo '<div  class="thumb gallery-item image">
                             <div class="img-container">
                                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="'.$row['nome'].'" data-image="' . $src . '" data-target="#image-gallery">
-                                    <img class="img-thumbnail" src="' . $src . '" alt="'.$row['nome'].'"> 
+                                    <img class="img-thumbnail" src="' . $src . '" alt=""> 
                                     <div class="description">'.$row['descrizione'].'</div>
                                 </a> 
                             </div>
                         </div>';      
-                }   
+                // }   
             }
             ?>
         </div>
@@ -26,7 +26,6 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="image-gallery-title"></h4>
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
                         </button>
                     </div>

@@ -7,7 +7,7 @@ if (isset($_FILES["image"]) && isset($_POST['insert_image']) && isset($_POST['de
     $sql = "INSERT INTO Galleria VALUES (0 , :name, :desc, :type, :size ,:image)";
 
     if ($file['size'] < 50000000) {
-        if (in_array($file['type'], array("image/png", "image/jpeg", "image/jpg", "image/gif"))) {
+        if (in_array($file['type'], array("image/png", "image/jpeg", "image/jpg", "image/gif", "video/mp4"))) {
             $stmt = $pdo->prepare($sql);
 
             if (!$stmt->execute([

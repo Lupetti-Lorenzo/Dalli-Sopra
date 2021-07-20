@@ -14,8 +14,8 @@ require "./header.php";
         <span class='mr-4'><b>Dimensione massima:</b> 16MB</span>
         <span><b>Max caratteri descrizone:</b> 512</span>
         <div class='mt-3'>
-            <input type="file" name="image" class='border border-primary p-1 rounded' required/>
-            <div class="input-group my-3">
+            <input type="file" name="image" class=' rounded' required/>
+            <div class="input-group my-4">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Descrizione:</span>
                 </div>
@@ -28,12 +28,12 @@ require "./header.php";
     <?php
 
         if (isset($_GET['success'])) {
-            echo '<p class="text-success text-center lead">';
+            echo '<p class="text-center mb-5 lead">';
             switch ($_GET['success']) {
                 case 'image':
-                    echo 'Immagine aggiunta con successo!</p>';
+                    echo 'Immagine aggiunta con successo!';
                     break;
-                case 'delete':
+                case 'imageDeleted':
                     echo 'Cancellazione andata a buon fine!';
                     break;
                 default:
@@ -43,18 +43,18 @@ require "./header.php";
         }
 
         if (isset($_GET['error'])) {
-            echo '<p class="text-danger text-center lead">';
+            echo '<p class="text-danger text-center mb-2 lead">';
             switch ($_GET['error']) {
                 case 'wtf':
                     echo "Errore sconosciuto durante la cancellazione o l'upload dell'immagine -> senti lore";
                     break;
                 case 'type':
-                    echo "Errore nell upload dell immagine: estenzione sbagliata";
+                    echo "Errore nell upload dell immagine: estensione sbagliata";
                     break;
                 case 'size':
                     echo "Errore nell upload dell immagine: file troppo grande";
                     break;
-                case 'delete':
+                case 'imageDeleted':
                     echo 'Ce stato un errore durante la cancellazione';
                 default:
                     break;
@@ -75,12 +75,12 @@ require "./header.php";
             $stmt->execute();
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 $src = 'data:'.$row['tipo'].';base64,'.base64_encode($row['immagine']);
-                echo "<div class='col-6 col-md-4 col-lg-3'>";
+                echo "<div class='col-6 col-md-4 col-lg-3 my-2'>";
                     echo '<div class="card p-1">
                             <img class="card-img-top" src="' . $src . '" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">'.$row['nome'].'</h5>     
-                                <p class="card-text">Size:'.$row['dimensioni'].'</p>
+                                <p class="card-text">'.(($row['dimensioni'])/1000).'KB</p>
                                 <p class="card-text">'.$row['descrizione'].'</p>
                                 <button name="delete_images" value="'.$row['ID'].'" type="submit" class="btn btn-danger" form="delete_imgs">Elimina</button>
                             </div>
