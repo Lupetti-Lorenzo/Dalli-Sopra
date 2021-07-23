@@ -7,18 +7,20 @@
             require "../scripts/db_config.script.php";
             $stmt = $pdo->prepare("SELECT * FROM Galleria");
             $stmt->execute();
+            $i = 1;
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                // for ($i = 0; $i <= 4; $i++) {
-                    $src = 'data:'.$row['tipo'].';base64,'.base64_encode($row['immagine']);
-                    echo '<div  class="thumb gallery-item image">
+                $src = 'data:'.$row['tipo'].';base64,'.base64_encode($row['immagine']);
+                echo '<div class="img-container">
+                        <div  class="thumb gallery-item image" style="animation-delay:'.($i*80).'ms">
                             <div class="img-container">
-                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="'.$row['nome'].'" data-image="' . $src . '" data-target="#image-gallery">
-                                    <img class="img-thumbnail" src="' . $src . '" alt=""> 
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="'.$row['descrizione'].'" data-image="' . $src . '" data-target="#image-gallery">
+                                    <img class="img-thumbnail" src="' . $src . '" alt="" loading="lazy"> 
                                     <div class="description">'.$row['descrizione'].'</div>
                                 </a> 
                             </div>
-                        </div>';      
-                // }   
+                        </div>
+                    </div>';      
+                    $i++;
             }
             ?>
         </div>
@@ -32,6 +34,7 @@
                     <div class="modal-body">
                         <img id="image-gallery-image" class="img-responsive col-md-12" src="">
                     </div>
+                    <p id='image-gallery-title'> </>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
                         </button>

@@ -12,9 +12,9 @@
 
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
-    <a class="navbar-brand" href="#">
-      <h2 class="mx-3" style="font-size: 50px; margin-bottom: 0;">Dalli Sopra</h2> 
+  <nav class="navbar-">
+    <div class="nav-items">
+      <h1 class="nav-titolo">Dalli Sopra</h1> 
       <?php 
         session_start();
         if (isset($_SESSION['carrax'])) {
@@ -23,23 +23,16 @@
                 <input type="submit" name="exit_session" value="Finisci sessione" class="btn btn-danger"/>
             </form>
             ';
-        } 
-      ?>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
-      <div class="navbar-nav align-items-center">
-       <?php if (isset($_SESSION['carrax'])) {  
-        $adminActive = '';
-         if ($page === "admin") $adminActive = 'active';
-         echo '<a class="nav-item nav-link' . $adminActive . '" href="./adminPage.php">Admin</a>';
-        }?>
-        
-        <a class="nav-item nav-link <?php if ($page === "home") echo "active"; ?>" href="./index.php">Home</a>
-        <a class="nav-item nav-link <?php if ($page === "gallery") echo "active"; ?>" href="./galleria.php">Galleria</a>
-        <a class="nav-item nav-link <?php if ($page === "storia") echo "active"; ?>"   href="./laStoria.php">La storia</a>
+          } 
+        ?>
       </div>
-    </div>
+      <div class="nav-items">
+       <?php if (isset($_SESSION['carrax'])) {  
+          $adminActive = '';
+          if ($page === "admin") $adminActive = 'active';
+          echo '<a class="nav-item btn btn-info mr-2 text-light nav-link' . $adminActive . '" href="./adminPage.php">Admin</a>';
+        }?>
+        <a type="button" class="btn nav-link <?php if ($page === "home") echo "btn-primary"; else echo "btn-dark" ?>" href="./index.php">Home</a>
+        <a type="button" class="btn nav-link <?php if ($page === "gallery") echo "btn-primary"; else echo "btn-dark" ?>" href="./galleria.php">Galleria</a>
+      </div>
   </nav>

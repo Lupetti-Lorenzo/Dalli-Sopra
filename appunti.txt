@@ -7,12 +7,10 @@ utente per admin con permessi
 
 //adminLoginPage
 prendere pari pari quella di united e via
--login per adminPage -> no db, password unica non cambiabile????
+-login per adminPage -> no db, password unica non cambiabile???? unica -> gitignore
 
+footer con contatti ecc
 
-mettere gap verticale galleria grid
-centrare foto galleria per telelfoni
-maps 3d anziche merdoso
 username: Carrax
 Password: crrx
 

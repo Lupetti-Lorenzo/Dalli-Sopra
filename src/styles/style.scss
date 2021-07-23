@@ -7,40 +7,39 @@
 
 
 body {
-    background: linear-gradient(270deg, #07b525, #06d369);
+    background: linear-gradient(279deg, #7cd08a, #369cd5);
     background-size: 400% 400%;
 
-    -webkit-animation: sfondo 24s ease infinite;
-    -moz-animation: sfondo 24s ease infinite;
-    -o-animation: sfondo 24s ease infinite;
-    animation: sfondo 24s ease infinite;
+    -webkit-animation: sfondo 0s ease infinite;
+    -moz-animation: sfondo 0s ease infinite;
+    -o-animation: sfondo 0s ease infinite;
+    animation: sfondo 0s ease infinite;
 }
+
 
 @-webkit-keyframes sfondo {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
 }
 @-moz-keyframes sfondo {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
 }
 @-o-keyframes sfondo {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
 }
 @keyframes sfondo {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
 }
-
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
 @import "./pages/galleria.scss";
-@import "./pages/laStoria.scss";
 @import "./pages/index.scss";
 
 
