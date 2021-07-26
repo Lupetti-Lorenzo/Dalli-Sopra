@@ -69,7 +69,7 @@ require "./header.php";
 
         <?php 
             //display le immagini dal database
-            require "../scripts/db_config.script.php";
+            require "../scripts/db_configAdmin.script.php";
 
             $stmt = $pdo->prepare("SELECT * FROM Galleria");
             $stmt->execute();

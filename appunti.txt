@@ -1,16 +1,6 @@
-----errori----
--errore non risolto di una foto .PNG al momento della aggiunta, le altre vanno sia in maiusc/minusc
-
-
-//database 
-utente per admin con permessi
-
-//adminLoginPage
-prendere pari pari quella di united e via
--login per adminPage -> no db, password unica non cambiabile???? unica -> gitignore
 
 footer con contatti ecc
 
 username: Carrax
-Password: crrx
+Password: 01CarraxGameplayer01
 

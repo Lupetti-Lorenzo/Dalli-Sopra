@@ -3,11 +3,11 @@ session_start();
 if (isset($_FILES["image"]) && isset($_POST['insert_image']) && isset($_POST['desc']) && isset($_SESSION['carrax'])) {
     $file = $_FILES["image"];
     
-    require "./db_config.script.php";
+    require "./db_configAdmin.script.php";
     $sql = "INSERT INTO Galleria VALUES (0 , :name, :desc, :type, :size ,:image)";
 
     if ($file['size'] < 50000000) {
-        if (in_array($file['type'], array("image/png", "image/jpeg", "image/jpg", "image/gif", "video/mp4"))) {
+        if (in_array($file['type'], array("image/png", "image/jpeg", "image/jpg", "image/gif"))) {
             $stmt = $pdo->prepare($sql);
 
             if (!$stmt->execute([

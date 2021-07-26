@@ -1,3 +1,12 @@
+CREATE USER 'Carra' IDENTIFIED BY 'Carra';
+SET PASSWORD for 'Carra' = 'CarraxGameplayer01abcd';
+GRANT SELECT, INSERT, DELETE ON Dalli.Galleria TO 'Carra';
+ALTER USER 'Carra' IDENTIFIED WITH mysql_native_password BY 'CarraxGameplayer01abcd'; 
+
+CREATE USER 'Client' IDENTIFIED BY 'Client';
+SET PASSWORD for 'Client' = 'Client';
+GRANT SELECT ON Dalli.Galleria TO 'Client';
+ALTER USER 'Client' IDENTIFIED WITH mysql_native_password BY 'Client'; 
 
 
 CREATE DATABASE Dalli;
@@ -11,5 +20,6 @@ CREATE TABLE Galleria (
     dimensioni  BIGINT NOT NULL,
     immagine MEDIUMBLOB NOT NULL
 );
+
 
 
