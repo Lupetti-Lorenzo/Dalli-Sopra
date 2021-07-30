@@ -1,7 +1,7 @@
 {
-	"name": "sitocrrx",
-	"version": "1.0.0",
-	"description": "",
+	"name": "Dalli Sopra",
+	"version": "1.0",
+	"description": "Dalli Sopra, paesino immerso nella natura situato in Garfagnana, Toscana. Dalle origini storiche intriganti",
 	"main": "index.php",
 	"scripts": {
 		"sass": "sass --watch src/styles/style.scss:src/styles/style.css",
@@ -9,15 +9,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Lupetti-Lorenzo/Sito-CrrX.git"
+		"url": "git+https://github.com/Lupetti-Lorenzo/Dalli-Sopra.git"
 	},
-	"keywords": [],
-	"author": "Lorenzo Lupetti <lorenzo.lupetti3@gmail.com>",
+	"keywords": ["Dalli Sopra", "Garfagnana", "Toscana", "Natura", "Montagne", "Boschi", "Paesaggi", "Galleria fotografica"],
+	"author": "Lorenzo Lupetti <lorenzo.lupetti3@gmail.com>, Alessandro Carrara <alessandro.carrara.work@hotmail.com>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Lupetti-Lorenzo/Sito-CrrX/issues"
+		"url": "https://github.com/Lupetti-Lorenzo/Dalli-Sopra/issues"
 	},
-	"homepage": "https://github.com/Lupetti-Lorenzo/Sito-CrrX#readme",
+	"homepage": "https://github.com/Lupetti-Lorenzo/Dalli-Sopra#readme",
 	"devDependencies": {
 		"sass": "^1.32.7"
 	}

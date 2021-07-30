@@ -19,7 +19,6 @@ require "./header.php";
 <?php
 if (isset($_GET['error'])) {
     echo '<p class="text-danger">Username o password sbagliati, riprova.</p>';
-}
-require "./footer.php" 
+} 
 ?>
 

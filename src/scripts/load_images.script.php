@@ -3,7 +3,7 @@ session_start();
 if (isset($_FILES["image"]) && isset($_POST['insert_image']) && isset($_POST['desc']) && isset($_SESSION['carrax'])) {
     $file = $_FILES["image"];
     
-    require "./db_configAdmin.script.php";
+    require "./db_config.script.php";
     $sql = "INSERT INTO Galleria VALUES (0 , :name, :desc, :type, :size ,:image)";
 
     if ($file['size'] < 50000000) {

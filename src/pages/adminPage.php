@@ -69,7 +69,7 @@ require "./header.php";
 
         <?php 
             //display le immagini dal database
-            require "../scripts/db_configAdmin.script.php";
+            require "../scripts/db_config.script.php";
 
             $stmt = $pdo->prepare("SELECT * FROM Galleria");
             $stmt->execute();
@@ -93,5 +93,4 @@ require "./header.php";
         </div>
     </form>
 </div>
-<?php require "./footer.php" ?>
 

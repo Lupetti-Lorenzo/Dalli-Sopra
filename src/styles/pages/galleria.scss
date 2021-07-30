@@ -25,18 +25,13 @@
 		.gallery-item {
 			width: 200px;
 		}
+
+		.image {
+			animation: cardEntrance 700ms ease-out;
+			animation-fill-mode: backwards;
+		}		
 	}
-	
 }
-/*
-.grid {
-	grid-auto-rows: 300px;
-}
-.card-tall {
-	grid-row: span 2 / auto;
-}
-da considerare, dato che ci sono 2 tipi di foto, alte e larghe
-*/
 
 @keyframes cardEntrance {
 	from {
@@ -50,13 +45,9 @@ da considerare, dato che ci sono 2 tipi di foto, alte e larghe
 	}
 }
 
-.image {
-	animation: cardEntrance 700ms ease-out;
-	animation-fill-mode: backwards;
-}
 
 
-//modal customized
+//MODIFIES TO MODAL POP UP
 .modal-dialog {
 	padding-top: 3rem;
 	height: 85% !important;
@@ -89,8 +80,8 @@ button:active {
     font-size: 2.5rem;
 }
 
-/* ----------------- HOVER GALLERY IMAGES ------------------ */
 
+/* ----------------- HOVER GALLERY IMAGES ------------------ */
 .thumb {
 	position: relative;
 	height: fit-content;

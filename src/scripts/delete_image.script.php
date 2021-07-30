@@ -5,7 +5,7 @@ if (isset($_GET['delete_images']) && isset($_SESSION['carrax'])) {
     $id = $_GET['delete_images'];
     
     $sql = "DELETE FROM Galleria WHERE id=:id";
-    require "./db_configAdmin.script.php";
+    require "./db_config.script.php";
     
     $stmt = $pdo->prepare($sql);
     if ($stmt->execute([ ':id' => $id ])) {

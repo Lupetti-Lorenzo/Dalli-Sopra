@@ -1,5 +1,5 @@
  //--------HEADER------//
- .navbar- {
+.navbar- {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,12 +10,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .btn {
-            margin: 0 .8rem !important;
+        .nav-button {
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            padding: .6rem .6rem;
+            text-decoration: none;
+            border-radius: 10%;
         }
-        .nav-link {font-size: 1.1rem;}
     }
-
+ 
     .nav-titolo {
         font-size: 4rem; 
         margin-bottom: 0;
@@ -32,8 +35,8 @@
             font-size: 2.7rem;
         }
         .nav-items {
-            .btn {
-                margin: 0 .5rem !important;
+            .nav-button {
+                margin: 0 .5rem;
             }
         }
     }
@@ -41,60 +44,43 @@
 
 
 
-//GIF landing page
-#container-gif {
+
+
+//video
+#landing-video {
+    object-fit: cover;
     width: 100%;
-    height: 90vh;
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-image:url(../img/LandingPage.gif);  
 }
 
+
 #image-gallery-title {
-    text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-#smallMap {
-    display: none;
-}
 
-.mappa {
-	text-align: center;
-    width: 100%;
-	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.6);
-}
-
-.container-foto {
+#container-map {
 	padding-top: 3rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+    .mappa {
+        width: 100%;
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.6);
+    }
 }
-
-@media screen and (max-width: 750px) {
-    #bigMap {
-        display: none;
-    }
-
-    #smallMap {
-        display: block;
-    }
-  }
-
 
  
 
 //LA STORIA
-.container {
+#container-storia {
     text-align: center;
     margin-top: 5rem;
 
     h1 {
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: 80px;
         font-family: 'Bebas Neue', cursive;
     }
@@ -108,7 +94,7 @@
         color: black;
         text-align: left;
         text-align: start;
-        margin-top: 3rem;
+        margin-top: 2rem;
         font-size: 1.7rem;
         text-align: center;
     }
@@ -125,3 +111,11 @@
         font-size: 1.4rem;
     }
 }
+
+//footer
+footer {
+    width: 100%;
+    background-color: rgb(11, 10, 10);
+    height: 0;
+}
+

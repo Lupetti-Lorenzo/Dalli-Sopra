@@ -14,7 +14,7 @@
                         <div  class="thumb gallery-item image" style="animation-delay:'.($i*80).'ms">
                             <div class="img-container">
                                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="'.$row['descrizione'].'" data-image="' . $src . '" data-target="#image-gallery">
-                                    <img class="img-thumbnail" src="' . $src . '" alt="" loading="lazy"> 
+                                    <img class="img-thumbnail" src="' . $src . '" alt="'.$row['descrizione'].'" loading="lazy"> 
                                     <div class="description">'.$row['descrizione'].'</div>
                                 </a> 
                             </div>
