@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-display: optional;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -64,6 +63,8 @@ body {
 #galleria-titolo {
   text-align: center;
   margin: 2.5rem 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 70px;
 }
 
 .gallery-grid {
@@ -71,8 +72,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-flow: dense;
-  grid-gap: 10px;
-  row-gap: 40px;
+  grid-gap: 1.5rem;
   justify-content: center;
   text-align: center;
 }
@@ -84,7 +84,7 @@ body {
   align-items: center;
 }
 .gallery-grid .img-container .gallery-item {
-  width: 200px;
+  width: 300px;
 }
 .gallery-grid .img-container .image {
   animation: cardEntrance 700ms ease-out;
@@ -122,6 +122,10 @@ body {
   display: block;
 }
 
+#image-gallery-title {
+  padding: 0 1.8rem;
+}
+
 .btn:focus,
 .btn:active,
 button:focus,
@@ -143,6 +147,9 @@ button:active {
   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   border-radius: 8px;
+}
+.thumb .img-container .thumbnail:hover .img-thumbnail {
+  transform: scale(1.1);
 }
 .thumb .img-container .thumbnail:hover .description {
   opacity: 0.85;
@@ -166,6 +173,7 @@ button:active {
   text-align: center;
   transition: 0.3s;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .navbar- {

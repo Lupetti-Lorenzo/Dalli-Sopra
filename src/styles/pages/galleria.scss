@@ -2,6 +2,8 @@
 #galleria-titolo {
 	text-align: center;
 	margin: 2.5rem 0;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 70px;
 }
 
 
@@ -10,8 +12,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-auto-flow: dense;
-	grid-gap: 10px;
-	row-gap: 40px;
+	grid-gap: 1.5rem;
 	justify-content: center;
 	text-align: center;
 
@@ -23,7 +24,7 @@
 		align-items: center;
 		
 		.gallery-item {
-			width: 200px;
+			width: 300px;
 		}
 
 		.image {
@@ -61,11 +62,17 @@
 			align-items: center !important;
 			justify-content: center !important;
 			display: flex !important;
+
+			
 		}
 		.modal-footer {
 			display: block;
 		}
 	}
+}
+
+#image-gallery-title {
+	padding: 0 1.8rem;
 }
 
 .btn:focus,
@@ -93,10 +100,9 @@ button:active {
 
 		.thumbnail {
 			&:hover {
-				// .img-thumbnail {
-				//     transform: scale(1.1);
-				// }
-
+				.img-thumbnail {
+				    transform: scale(1.1);
+				}
 				.description {
 					opacity: 0.85;
 					transform: translate(0, -50%);
@@ -122,6 +128,7 @@ button:active {
 				text-align: center;
 				transition: 0.3s;
 				border-radius: 8px;
+				overflow: hidden;
 			}
 		}
 	}

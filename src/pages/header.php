@@ -20,6 +20,8 @@
     <meta property="og:image" content="../img/Favicon Dalli Sopra.png">
     <meta property="og:title" content="Dalli Sopra"/>
     <meta property="og:type" content="webpage"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
   </head>
 <body>
   <nav class="navbar-">
