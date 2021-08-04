@@ -1,5 +1,18 @@
 <footer>
-    
+    <h2>Per iniziativa di</h2>
+        <div id="users-container" class="container">
+        <div class="creator-info">
+            <p>Alessandro Carrara</p>
+            <p>Grafico Progettista Pubblicitario, Fotografo</p>    
+            <p>Email: alessandro.carrara.work@hotmail.com </p>
+        </div>
+        <div class="creator-info">
+            <p>Lorenzo Lupetti</p>
+            <p>Sviluppatore Software</p>    
+            <p>Email: lorenzo.lupetti3@gmail.com </p>
+        </div>
+    </div>
+
 </footer>
 
 

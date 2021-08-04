@@ -18,7 +18,7 @@ CREATE TABLE Galleria (
     descrizione VARCHAR(512) NOT NULL,
     tipo VARCHAR(10) NOT NULL,
     dimensioni  BIGINT NOT NULL,
-    immagine MEDIUMBLOB NOT NULL
+    img_dir VARCHAR(255) NOT NULL
 );
 
 

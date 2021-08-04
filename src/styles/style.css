@@ -63,7 +63,7 @@ body {
 #galleria-titolo {
   text-align: center;
   margin: 2.5rem 0;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 70px;
 }
 
@@ -148,9 +148,6 @@ button:active {
   overflow: hidden;
   border-radius: 8px;
 }
-.thumb .img-container .thumbnail:hover .img-thumbnail {
-  transform: scale(1.1);
-}
 .thumb .img-container .thumbnail:hover .description {
   opacity: 0.85;
   transform: translate(0, -50%);
@@ -174,6 +171,7 @@ button:active {
   transition: 0.3s;
   border-radius: 8px;
   overflow: hidden;
+  padding-top: 8px;
 }
 
 .navbar- {
@@ -200,7 +198,7 @@ button:active {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0.8rem;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
 }
 
 @media screen and (max-width: 650px) {
@@ -243,11 +241,11 @@ button:active {
 #container-storia h1 {
   margin-top: 20px;
   font-size: 80px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
 }
 #container-storia h2 {
   font-size: 60px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
 }
 #container-storia p {
   color: black;
@@ -270,8 +268,39 @@ button:active {
 }
 footer {
   width: 100%;
-  background-color: #0b0a0a;
-  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.2rem 0 2rem 0;
+}
+footer * {
+  font-family: "Bebas Neue";
+}
+footer h2 {
+  margin-bottom: 2rem;
+}
+footer #users-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-evenly;
+  flex-direction: column;
+}
+footer #users-container .creator-info {
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+footer #users-container .creator-info p {
+  padding: 0.08rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  footer #users-container {
+    flex-direction: row;
+  }
+  footer #users-container p {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

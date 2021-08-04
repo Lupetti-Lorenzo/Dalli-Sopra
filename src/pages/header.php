@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href='../styles/style.css'>
     <?php 
-      if ($page == 'home') echo '<meta name="description" content="Dalli Sopra, paesino immerso nella natura situato in Garfagnana, Toscana. Dalle origini storiche intriganti.">';
-      if ($page == 'admin') echo '<meta name="description" content="Pagina con pannello di controllo per gestire la galleria.">';
-      if ($page == 'gallery') echo '<meta name="description" content="Galleria fotografica contenente foto, video originali.">';
+      if ($page == 'home') echo '<meta name="description" content="Dalli Sopra, paesino immerso nella natura situato in Garfagnana, Toscana. Dalle origini storiche intriganti."> <meta property="og:description" content="Dalli Sopra, paesino immerso nella natura situato in Garfagnana, Toscana. Dalle origini storiche intriganti."/>';
+      if ($page == 'admin') echo '<meta name="description" content="Pagina con pannello di controllo per gestire la galleria.">  <meta property="og:description=" content="Pagina con pannello di controllo per gestire la galleria."/>';
+      if ($page == 'gallery') echo '<meta name="description" content="Galleria fotografica contenente foto, video originali."><meta property="og:description=" content="Galleria fotografica contenente foto, video originali."/>';
     ?>
     <title>Dalli Sopra</title>
     <link rel="shortcut icon" href="../img/Favicon Dalli Sopra.png">
 
     <!-- Social media previews Open Graph -->
     <meta property="og:url" content="https://www.dallisopra.it" />
-    <meta property="og:image" content="../img/Favicon Dalli Sopra.png">
+    <meta property="og:image" content="../img/AnteprimaSito.jpg">
     <meta property="og:title" content="Dalli Sopra"/>
-    <meta property="og:type" content="webpage"/>
-    <meta property="og:image:width" content="300"/>
-    <meta property="og:image:height" content="300"/>
+    <meta property="og:type" content="website"/>
   </head>
 <body>
   <nav class="navbar-">

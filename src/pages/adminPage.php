@@ -19,7 +19,7 @@ require "./header.php";
                 <div class="input-group-prepend">
                     <span class="input-group-text">Descrizione:</span>
                 </div>
-                <textarea class="form-control" aria-label="Descrizione:" name="desc" maxlength='512' placeholder="Scrivi <br> per andare a capo..." required></textarea>
+                <textarea class="form-control" aria-label="Descrizione:" name="desc" maxlength='512' placeholder="Scrivi qui..." required></textarea>
             </div>
             <input type="submit" name="insert_image" value="Inserisci immagine" class='btn btn-primary'/>
         </div>
@@ -74,10 +74,9 @@ require "./header.php";
             $stmt = $pdo->prepare("SELECT * FROM Galleria");
             $stmt->execute();
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                $src = 'data:'.$row['tipo'].';base64,'.base64_encode($row['immagine']);
                 echo "<div class='col-6 col-md-4 col-lg-3 my-2'>";
                     echo '<div class="card p-1">
-                            <img class="card-img-top" src="' . $src . '" alt="Card image cap">
+                            <img class="card-img-top" src="' . $row['img_dir'] . '" alt="Card image">
                             <div class="card-body">
                                 <h5 class="card-title">'.$row['nome'].'</h5>     
                                 <p class="card-text">'.(($row['dimensioni'])/1000).'KB</p>

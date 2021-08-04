@@ -9,12 +9,11 @@
             $stmt->execute();
             $i = 1;
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                $src = 'data:'.$row['tipo'].';base64,'.base64_encode($row['immagine']);
                 echo '<div class="img-container">
-                        <div  class="thumb gallery-item image" style="animation-delay:'.($i*80).'ms">
+                        <div  class="thumb gallery-item image" style="animation-delay:'.($i*60).'ms">
                             <div class="img-container">
                                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="'.$row['descrizione'].'" data-image="' . $src . '" data-target="#image-gallery">
-                                    <img class="img-thumbnail" src="' . $src . '" alt="'.$row['descrizione'].'" loading="lazy"> 
+                                    <img class="img-thumbnail" src="' . $row['img_dir'] . '" alt="'.$row['descrizione'].'" loading="lazy"> 
                                     <div class="description">'.$row['descrizione'].'</div>
                                 </a> 
                             </div>
