@@ -53,6 +53,38 @@ $(document).ready(function () {
 			updateGallery($(this));
 		});
 	}
+
+
+	//load more images button
+	let num = 1
+	$("#more_images").click(function (e) {
+		e.preventDefault(e);
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+		   	if (this.readyState == 4 && this.status == 200) {
+				document.querySelector('.gallery-grid').insertAdjacentHTML('beforeend', this.responseText)	
+				num++
+				loadGallery(true, "a.thumbnail")
+				//check if there are other images, if not display: none to the button
+				if (!checkImagesLeft(num)) {document.querySelector('#more_images_container').style.display = 'none'}
+			}
+		};
+		xhttp.open("POST", "../scripts/more_images.script.php?num="+num, true);
+		xhttp.send();
+	})
+
+	function checkImagesLeft(num) {
+		let left = true
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				if (this.responseText === "") left = false
+			}
+		};
+		xhttp.open("POST", "../scripts/more_images.script.php?num="+num, false);
+		xhttp.send();
+		return left
+	}
 });
 
 // build key actions
@@ -78,3 +110,4 @@ $(document).keydown(function (e) {
 
 document.querySelector("#image-gallery-image").style.maxHeight = "74vh";
 document.querySelector("#image-gallery-image").style.objectFit = "contain";
+

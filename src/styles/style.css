@@ -70,25 +70,36 @@ body {
 .gallery-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-auto-flow: dense;
-  grid-gap: 1.5rem;
+  grid-gap: 3rem;
   justify-content: center;
   text-align: center;
 }
 .gallery-grid .img-container {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.gallery-grid .img-container .gallery-item {
-  width: 300px;
-}
 .gallery-grid .img-container .image {
   animation: cardEntrance 700ms ease-out;
   animation-fill-mode: backwards;
+}
+
+#more_images_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+#more_images_container #more_images {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  padding: 0.6rem 0.6rem;
+  text-decoration: none;
+  border-radius: 10%;
 }
 
 @keyframes cardEntrance {
